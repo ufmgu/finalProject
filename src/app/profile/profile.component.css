@@ -1,0 +1,23 @@
+
+.profile-container {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for a raised effect */
+    background-color: #f9f9f9; /* Set background color */
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 8px;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  

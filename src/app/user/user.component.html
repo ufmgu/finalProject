@@ -1,0 +1,19 @@
+<form>
+
+    <input type="text" name="username"  [(ngModel)] = "user.username">
+    <input type="text" name="password"  [(ngModel)] = "user.password">
+    <input type="text" name="mobno"  [(ngModel)] = "user.mobno">
+    <input type="text" name="emailid"  [(ngModel)] = "user.emailid">
+
+    <input type="button" value="postdata" (click)="saveToDB()">
+    
+    <input type="button" value="getdata" (click)="getUser()">
+
+    <input type="button" value="deletedata" (click)="deleteUser()">
+
+    <input type="button" value="getAllUsers" (click)="getAllUsers()">
+
+</form>
+
+<span style="color: red;font-size:30px;">{{message}}</span>
+

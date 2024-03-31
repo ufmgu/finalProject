@@ -1,0 +1,15 @@
+a
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: #ffffff;
+
+}
+
+nav{
+    background-color: black;
+}
+a:hover{
+    background-color: green;
+}

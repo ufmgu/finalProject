@@ -1,0 +1,54 @@
+<body>
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+
+                <button type="button" class="toggle-btn">Log In</button>
+                <button type="button" class="toggle-btn">Register</button>
+            </div>
+
+
+                <form class="input-group" (ngSubmit)="onSubmit()">
+
+
+                    <div class="profile-container">
+                        <label for = "profileImage" class="profile-img-lable">ProfileImage</label>
+                        <input type="file" id="profileImage" (change)="onFileSelcted($event)">
+                        <img *ngIf="imageUrl" [src]="imageUrl" alt="Profile Image" class="profile-img-peview">
+                    </div>
+
+
+
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" placeholder="username" [(ngModel)]="user.username"><br><br>
+                
+                    <label for="password">Password:</label>
+                    <input type="text" name="password" placeholder="password" [(ngModel)]="user.password"><br><br>
+                
+                    <label for="mobno">Mobaile:</label>
+                    <input type="number" name="mobno" placeholder="mobno" [(ngModel)]="user.mobno"><br><br>
+                
+                    <label for="emailid">Email:</label>
+                    <input type="text" name="emailid" placeholder="emailid" [(ngModel)]="user.emailid"><br><br>
+                
+                   
+                    <button type="submit" [disabled] ="registraftionForm.invalid">Register
+                        
+                    </button>
+                
+                
+                </form>
+                
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
